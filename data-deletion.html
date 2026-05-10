@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G1RL — Data Deletion</title>
+<style>
+  :root {
+    --bg: #fff;
+    --ink: #1a1a2e;
+    --muted: #5b5b7a;
+    --accent: #e91e8c;
+    --rule: #ffd6ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a2e;
+      --ink: #f5e8f0;
+      --muted: #b6a8be;
+      --accent: #ffb3da;
+      --rule: #3a2540;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 32px 0 8px;
+    color: var(--accent);
+  }
+  p, li { font-size: 16px; }
+  ul, ol { padding-left: 24px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
+  .meta { color: var(--muted); font-size: 14px; }
+  code {
+    background: var(--rule);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>G1RL — Data Deletion</h1>
+<p class="meta">Last updated: May 9, 2026</p>
+
+<p>This page explains what data G1RL stores, how to delete it, and how to request deletion of any data we hold off your device.</p>
+
+<h2>What G1RL stores about you</h2>
+<p>G1RL is a calculator. We deliberately store as little as possible. Specifically:</p>
+<ul>
+  <li><strong>On your device only</strong> (never sent to us): your calculation history, theme and key-shape preferences, and onboarding state. This data lives in your phone's local storage and never leaves it.</li>
+  <li><strong>Sent to RevenueCat</strong> (our purchase processor) when you purchase any in-app item: an anonymous customer ID, the product IDs you purchased, and the timestamps of those purchases.</li>
+  <li><strong>Sent to Google or Apple</strong> only if you choose to sign in with Google or Sign in with Apple: your name, email address, and a stable user identifier. Sign-in is optional. Without it, G1RL works in anonymous mode.</li>
+  <li><strong>Crash and diagnostic data</strong>, collected automatically by the Expo runtime to help us spot problems. This data does not include personal identifiers.</li>
+</ul>
+
+<h2>Deleting on-device data</h2>
+<p>Two ways, your choice:</p>
+<ol>
+  <li>Open G1RL → tap the gear (Settings) → tap <strong>Sign out</strong>. This clears the saved sign-in token and resets local preferences. (Note: as of this version, full local clear requires step 2.)</li>
+  <li>Uninstall G1RL from your phone. iOS and Android both fully remove the app's local storage on uninstall.</li>
+</ol>
+
+<h2>Deleting off-device data</h2>
+<p>To request deletion of the off-device data we hold (RevenueCat purchase records, Google/Apple sign-in identifiers, crash logs):</p>
+<ol>
+  <li>Email <a href="mailto:miguel.zom.mg@gmail.com?subject=G1RL%20data%20deletion%20request">miguel.zom.mg@gmail.com</a> with the subject line "G1RL data deletion request."</li>
+  <li>Include the email address you signed into G1RL with (or, if you used Sign in with Apple in the private-relay mode, the relay email Apple gave you).</li>
+  <li>You'll receive a confirmation reply within <strong>7 days</strong>.</li>
+  <li>Your records will be deleted from RevenueCat and our Google Cloud project within <strong>30 days</strong>.</li>
+</ol>
+
+<h2>What is retained</h2>
+<p>Some data we cannot delete:</p>
+<ul>
+  <li>Aggregated, anonymized purchase records that Apple and Google retain in their stores for tax and financial-reporting purposes. We do not control these.</li>
+  <li>Anonymized analytics and crash data older than 90 days, which is rolled up into trends and no longer linkable to any individual.</li>
+</ul>
+
+<h2>Questions</h2>
+<p>For anything else, reach out to <a href="mailto:miguel.zom.mg@gmail.com">miguel.zom.mg@gmail.com</a>.</p>
+
+<hr>
+<p class="meta">G1RL is built by Miguel Garcia (Imagisticmedia). For our full privacy policy, see <a href="./privacy-policy.html">privacy-policy.html</a>. For our terms of service, see <a href="./terms-of-service.html">terms-of-service.html</a>.</p>
+
+</main>
+</body>
+</html>
